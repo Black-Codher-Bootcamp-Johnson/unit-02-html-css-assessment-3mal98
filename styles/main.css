@@ -289,6 +289,7 @@ header {
     }
 }
 
+
 /* About me */
 .about-me {
     max-width: 1000px;
@@ -380,6 +381,13 @@ header {
     color: #ff7235;
   }
 
+  .projects-container {
+    flex-direction: column;
+  }
+
+  .project-container {
+    width: 20.875rem;
+  }
 
 /* Contact */
 .contact {
