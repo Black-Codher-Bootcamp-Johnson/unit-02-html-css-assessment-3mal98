@@ -24,7 +24,7 @@
     --primary-shadow: #8b8eaf;
 
     --bottom-margin: 0.5rem;
-    
+
     --bs: 0.25em 0.25em 0.75em rgba(0,0,0,.25),
           0.125em 0.125em 0.25em rgba(0,0,0,.15);
 }
@@ -251,10 +251,6 @@ header {
     position: relative;
 }
 
-.intro__img {
-    box-shadow: var(--bs);
-}
-
 .section__subtitle--intro {
     display: inline-block;
 }
@@ -270,13 +266,6 @@ header {
             "img subtitle";
         grid-template-columns: min-content max-content;
     }
-    
-    .intro__img {
-        grid-area: img;
-        min-width: 150px;
-        position: relative;
-        z-index: 2;
-    }    
     
     .section__subtitle--intro {
         align-self: start;
@@ -296,7 +285,9 @@ header {
     margin: 0 auto;
 }
 
-
+.about-me__img {
+    box-shadow: var(--bs);
+}
 
 @media (min-width: 600px) {
     .about-me {
@@ -313,13 +304,27 @@ header {
         grid-area: title;
     }
     
-    
+    .section__subtitle--about {
+        grid-column: 1 / -1;
+        grid-row: 2;
+        position: relative;
+        left: -1em;
+        width: calc(100% + 2em);
+        padding-left: 1em;
+        padding-right: calc(200px + 4em);
+    }
     
     .about-me__img {
         grid-area: img;
         position: relative;
         z-index: 2;
     }
+}
+
+.about-me_body {
+    color: #3d3b42;
+    font-size: 1.1em;
+    line-height: 1.7;
 }
 
 
